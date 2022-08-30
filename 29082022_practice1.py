@@ -11,3 +11,5 @@ player02 = Player("a2",99)
 
 print(player01.age)
 print(player02.name)
+print(player02.display_info())
+print(player01.display_info())
