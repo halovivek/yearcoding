@@ -30,3 +30,23 @@ def func(*args, **kwargs):
     print("Inside one more value")
     print(args, kwargs)
 
+
+def smart_divide(func):
+    def inner(a,b):
+        print("i am going to divide ",a,"and", b)
+        if b == 0:
+            print("zero cannot be divided")
+            return
+
+        return func(a,b)
+    return inner
+
+
+@smart_divide
+def divide(a,b):
+    print(a/b)
+    #return a/b
+
+divide(3,0)
+
+divide(2345634325324523423423342412424343242434234234234,9707076768768700708)
