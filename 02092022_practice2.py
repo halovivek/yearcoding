@@ -1,3 +1,6 @@
+
+#decorators write a function and make it as decorator.
+
 def hasha(func):
     def inner(*args,**kwargs):
         print("#" * 50)
