@@ -1,17 +1,16 @@
+import time
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
-import time
 
-#from webdriver_manager.chrome import ChromeDriverManager
-def test_me(my_name):
-    s=Service(ChromeDriverManager().install())
-    chrome_driver = webdriver.Chrome(service=s)
-driver = webdriver.Chrome(r'C:\Drivers\chromedriver.exe')
-browser = webdriver.Chrome()
+s=Service(ChromeDriverManager().install())
+chrome_driver = webdriver.Chrome(service=s)
+
+browser = webdriver.Chrome("/home/halovivek/Documents/Automation/selenium_driver/")
 browser.implicitly_wait(5)
-browser.get("https://kite.zerodha.com/")
-
+browser.get("https://www.google.com")
+#browser.get("https://kite.zerodha.com/")
+browser.implicitly_wait(5)
 
 #from selenium.webdriver.chrome.service import Service
 import os
@@ -22,6 +21,8 @@ import time
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 #path = (r'C:\Drivers\chromedriver.exe')
+#driver = webdriver.Chrome(r'C:\Drivers\chromedriver.exe')
+
 #s = Service(path)
 #driver = webdriver.Chrome(service=s)
 # browser.maximize_window()
