@@ -1,7 +1,17 @@
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
-driver = webdriver.Chrome(r'C:\Drivers\chromedriver.exe')
 from selenium.webdriver.chrome.service import Service
+#from webdriver_manager.chrome import ChromeDriverManager
+def test_me(my_name):
+    s=Service(ChromeDriverManager().install())
+    chrome_driver = webdriver.Chrome(service=s)
+driver = webdriver.Chrome(r'C:\Drivers\chromedriver.exe')
+browser = webdriver.Chrome()
+browser.implicitly_wait(5)
+browser.get("https://kite.zerodha.com/")
+
+
+#from selenium.webdriver.chrome.service import Service
 import os
 #import self as self
 #from selenium import webdriver
@@ -12,10 +22,6 @@ from selenium.webdriver.common.by import By
 #path = (r'C:\Drivers\chromedriver.exe')
 #s = Service(path)
 #driver = webdriver.Chrome(service=s)
-browser = webdriver.Chrome()
-browser.implicitly_wait(5)
-browser.get("https://kite.zerodha.com/")
-
 # browser.maximize_window()
 # browser.find_element(By.XPATH, "//*[@id='userid']").send_keys("DV1815")
 # browser.find_element(By.XPATH,"//*[@id='password']").send_keys("Guru@1234")
