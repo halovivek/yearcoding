@@ -504,3 +504,5 @@ DevTools listening on ws://localhost:58003/devtools/browser/af228e68-3706-4621-a
 
 ###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
 
+1662455273232	geckodriver	INFO	Listening on 127.0.0.1:53777
+1662455383511	geckodriver	INFO	Listening on 127.0.0.1:53834

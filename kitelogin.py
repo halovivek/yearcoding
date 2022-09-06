@@ -1,10 +1,16 @@
+import os
+
+import self as self
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
-
+webdriver = webdriver.Firefox(executable_path = 'C:\Drivers\geckodriver.exe')
+#gecko = os.path.normpath(os.path.join(os.path.dirname(__file__), 'geckodriver'))
+#binary = FirefoxBinary(r'C:\Program Files (x86)\Mozilla Firefox\firefox.exe')
+#driver = webdriver.Firefox(firefox_binary=binary, executable_path=gecko+'.exe')
 
 #browser = webdriver.Chrome()
 browser = webdriver.Firefox()
