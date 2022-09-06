@@ -1,6 +1,8 @@
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
+import time
+
 #from webdriver_manager.chrome import ChromeDriverManager
 def test_me(my_name):
     s=Service(ChromeDriverManager().install())
