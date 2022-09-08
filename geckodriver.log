@@ -506,3 +506,9 @@ DevTools listening on ws://localhost:58003/devtools/browser/af228e68-3706-4621-a
 
 1662455273232	geckodriver	INFO	Listening on 127.0.0.1:53777
 1662455383511	geckodriver	INFO	Listening on 127.0.0.1:53834
+1662605116581	geckodriver	INFO	Listening on 127.0.0.1:32851
+1662605117989	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "41025" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileFn1dVI"
+
+1662605132081	geckodriver	INFO	Listening on 127.0.0.1:52489
+1662605132763	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "41063" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileACqnJd"
+
