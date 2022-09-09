@@ -19,5 +19,9 @@ s = Service(ChromeDriverManager().install())
 chrome_options = Options()
 chrome_options.add_experimental_option("detach",True)
 """
-The broswer will be started.
+The browser will be started.
 """
+browser = webdriver.Chrome(service=s)
+browser.maximize_window()
+browser.get("https://www.yahoo.com")
+print(browser.title)
