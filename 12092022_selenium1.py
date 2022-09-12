@@ -39,3 +39,4 @@ browser.find_element(By.XPATH,"//select[@id='exampleFormControlSelect1']").click
 browser.find_element(By.XPATH,"//input[@id='inlineRadio2']").click()
 browser.find_element(By.XPATH,"//body/app-root[1]/form-comp[1]/div[1]/form[1]/div[7]/input[1]").send_keys("01/01/2000")
 browser.implicitly_wait(20000)
+browser.find_element(By.XPATH,"//body/app-root[1]/form-comp[1]/div[1]/form[1]/input[1]").click()
