@@ -64,3 +64,5 @@ assert "Success" in message
 # browser.find_element(By.XPATH,"/html/body/app-root/form-comp/div/div[2]/div/a").click()
 print(browser.title)
 #browser.close()
+# find the element by writing the xpath or css selector and then run the program.
+#browser.find_element(By.XPATH,)
