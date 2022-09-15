@@ -42,3 +42,4 @@ for place in places:
     if place.text == "Mangalore":
         place.click()
         break
+# Need to select and close the pop up
