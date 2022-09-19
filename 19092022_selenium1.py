@@ -25,7 +25,7 @@ Implicit wait and explict wait
 """
 browser.find_element(By.XPATH,"//input[@placeholder='Search for Vegetables and Fruits']").send_keys("ber")
 time.sleep(3)
-items_list = browser.find_elements(By.XPATH, "//div[@class='products']")
+items_list = browser.find_elements(By.XPATH, "//div[@class='products']/div")
 print(len(items_list))
 count = len(items_list)
 assert count > 0
