@@ -71,4 +71,4 @@ wait.until(expected_conditions.presence_of_element_located((By.CLASS_NAME, "prom
 promotext = browser.find_element(By.CLASS_NAME, "promoInfo").text
 print(promotext)
 assert promotext == "Code applied ..!"
-
+#test
