@@ -80,7 +80,7 @@ promotext = browser.find_element(By.CLASS_NAME, "promoInfo").text
 print(promotext)
 assert promotext == "Code applied ..!"
 #instead of getting the integer value , convert it to float for decimal value
-discounted_value = float(browser.find_element(By.CLASS_NAME ,".discountAmt").text)
+discounted_value = float(browser.find_element(By.XPATH, "//span[@class='discountAmt']").text)
 assert discounted_value < total_amount
 
 #testing
