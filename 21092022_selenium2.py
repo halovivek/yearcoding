@@ -14,10 +14,19 @@ chrome_options.add_experimental_option("detach",True)
 browser = webdriver.Chrome(service=s, options=chrome_options)
 browser.implicitly_wait(5)
 """
-Get the values in the table, sum it and compare with the output
-1.  Need to find the elements and store it in a variable
-2. add the values
-3. compare the value with the sum
+Compare the expected results with actual results
+for ca selection it should display only Cauliflower - 1 Kg
+Carrot - 1 Kg
+Capsicum
+Cashews - 1 Kg
+Need to store in a list.
+Get the list from the display and store it in a new list.
+compare the both list and confirm pass or fail.
+"""
+expectedlist = ['Cauliflower - 1 Kg', 'Carrot - 1 Kg', 'Capsicum', 'Cashews - 1 Kg']
+actuallist =[]
+"""
+The above two list, one is expected list and other one is actual list.
 
 """
 browser.get("https://rahulshettyacademy.com/seleniumPractise/#/")
@@ -27,12 +36,17 @@ browser.find_element(By.XPATH, "//input[@placeholder='Search for Vegetables and 
 browser.find_element(By.XPATH,"//input[@placeholder='Search for Vegetables and Fruits']").send_keys("ca")
 time.sleep(3)
 items_list = browser.find_elements(By.XPATH, "//div[@class='products']/div")
+
 print(len(items_list))
 count = len(items_list)
 assert count > 0
 
+#the append in the actuallist will add the items which is found
 for item_list in items_list:
+    actuallist.append(item_list.find_element(By.XPATH, "h4").text)
     item_list.find_element(By.XPATH, "div/button").click()
+
+assert expectedlist == actuallist
 
 browser.find_element(By.XPATH, "//img[@alt='Cart']").click()
 browser.find_element(By.XPATH,"//button[normalize-space()='PROCEED TO CHECKOUT']").click()
