@@ -25,6 +25,7 @@ compare the both list and confirm pass or fail.
 """
 expectedlist = ['Cauliflower - 1 Kg', 'Carrot - 1 Kg', 'Capsicum', 'Cashews - 1 Kg']
 actuallist =[]
+print(expectedlist)
 """
 The above two list, one is expected list and other one is actual list.
 
@@ -47,6 +48,8 @@ for item_list in items_list:
     item_list.find_element(By.XPATH, "div/button").click()
 
 assert expectedlist == actuallist
+
+print(actuallist)
 
 browser.find_element(By.XPATH, "//img[@alt='Cart']").click()
 browser.find_element(By.XPATH,"//button[normalize-space()='PROCEED TO CHECKOUT']").click()
@@ -76,6 +79,10 @@ wait.until(expected_conditions.presence_of_element_located((By.CLASS_NAME, "prom
 promotext = browser.find_element(By.CLASS_NAME, "promoInfo").text
 print(promotext)
 assert promotext == "Code applied ..!"
+#instead of getting the integer value , convert it to float for decimal value
+discounted_value = float(browser.find_element(By.CLASS_NAME ,".discountAmt").text)
+assert discounted_value < total_amount
+
 #testing
 
 
