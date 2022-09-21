@@ -63,7 +63,7 @@ The above will check all the items and it will click the buttons in all carts
 
 browser.find_element(By.XPATH, "//img[@alt='Cart']").click()
 browser.find_element(By.XPATH,"//button[normalize-space()='PROCEED TO CHECKOUT']").click()
-#time.sleep(3)
+time.sleep(3)
 browser.find_element(By.CLASS_NAME, "promoCode").send_keys("rahulshettyacademy")
 browser.find_element(By.CLASS_NAME, "promoBtn").click()
 wait = WebDriverWait(browser, 10)
