@@ -84,7 +84,5 @@ discounted_value = float(browser.find_element(By.XPATH, "//span[@class='discount
 assert discounted_value < total_amount
 
 #testing
-
-
 browser.close()
 
