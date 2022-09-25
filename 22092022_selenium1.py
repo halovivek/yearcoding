@@ -11,8 +11,10 @@ from selenium.webdriver.support.wait import WebDriverWait
 from webdriver_manager.chrome import ChromeDriverManager
 s = Service(ChromeDriverManager().install())
 chrome_options = Options()
-chrome_options.add_experimental_option("detach",True)
+chrome_options.add_experimental_option("detach", True)
+#browser = webdriver.Chrome(executable_path='/usr/bin/chromedriver', options=chrome_options, service_args=['--verbose', '--log-path=/tmp/chromedriver.log'])
 browser = webdriver.Chrome(service=s, options=chrome_options)
+#browser = webdriver.Chrome(options=Options)
 browser.implicitly_wait(5)
 
 """
@@ -25,4 +27,4 @@ browser.maximize_window()
 print(browser.title)
 #//a[normalize-space()='Top']
 #//button[@id='mousehover']
-action = ActionChains(browser)
+#action = ActionChains(browser)
