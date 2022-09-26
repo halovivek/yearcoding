@@ -17,8 +17,8 @@ browser = webdriver.Chrome(service=Service(ChromeDriverManager().install()),opti
 #s = Service(ChromeDriverManager().install())
 #chrome_options = Options()
 # chrome_options.add_experimental_option("detach",True)
-browser = webdriver.Chrome(service=s, options=chrome_options)
-#browser.maximize_window()
+#browser = webdriver.Chrome(service=s, options=chrome_options)
+browser.maximize_window()
 browser.implicitly_wait(5)
 
 
