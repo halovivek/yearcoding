@@ -514,3 +514,6 @@ DevTools listening on ws://localhost:58003/devtools/browser/af228e68-3706-4621-a
 
 1662617548877	geckodriver	INFO	Listening on 127.0.0.1:51868
 1664107176039	geckodriver	INFO	Listening on 127.0.0.1:51889
+1664245787636	geckodriver	INFO	Listening on 127.0.0.1:54943
+1664246765206	geckodriver	INFO	Listening on 127.0.0.1:53589
+1664246937038	geckodriver	INFO	Listening on 127.0.0.1:59573
