@@ -1,6 +1,6 @@
 import os
 
-import self as self
+#import self as self
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
