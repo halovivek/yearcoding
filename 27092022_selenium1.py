@@ -13,19 +13,13 @@ from selenium.webdriver.support.wait import WebDriverWait
 from webdriver_manager.firefox import GeckoDriverManager
 #from webdriver_manager.chrome import ChromeDriverManager
 options = Options()
-#options.binary_location = r'/usr/bin/firefox'
-#browser = webdriver.Firefox()
-#options = webdriver.FirefoxOptions()
-#options = webdriver.ChromeOptions()
+options.binary_location = r"/usr/bin/"
+options = webdriver.FirefoxOptions()
 options.add_argument("start-maximized")
 options.add_experimental_option("detach", True)
 browser = webdriver.Firefox(service=Service(GeckoDriverManager().install()), options=options)
-#browser = webdriver.Chrome(service=Service(ChromeDriverManager().install()),options=options)
 
-#s = Service(ChromeDriverManager().install())
-#chrome_options = Options()
-# chrome_options.add_experimental_option("detach",True)
-#browser = webdriver.Chrome(service=s, options=chrome_options)
+#browser = webdriver.Firefox()
 browser.maximize_window()
 browser.implicitly_wait(5)
 
