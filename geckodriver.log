@@ -537,3 +537,6 @@ ATTENTION: default value of option mesa_glthread overridden by environment.
 ATTENTION: default value of option mesa_glthread overridden by environment.
 ATTENTION: default value of option mesa_glthread overridden by environment.
 ATTENTION: default value of option mesa_glthread overridden by environment.
+1664602410336	geckodriver	INFO	Listening on 127.0.0.1:54674
+1664602997032	geckodriver	INFO	Listening on 127.0.0.1:54761
+1664603051795	geckodriver	INFO	Listening on 127.0.0.1:54772
