@@ -57,3 +57,9 @@ assert test == "Opening a new window"
 browser.find_element(By.XPATH,"//span[@class='user-id']").click()
 browser.find_element(By.XPATH,"//a[normalize-space()='Logout']").click()
 
+"""
+1. Find the list of symbols which needs to include in the id
+2. need to the screen shot 
+3. store all the files in a folder with date format
+
+"""
