@@ -54,8 +54,8 @@ print(browser.find_element(By.CSS_SELECTOR,"div[class='example'] h3").text)
 test = browser.find_element(By.CSS_SELECTOR,"div[class='example'] h3").text
 assert test == "Opening a new window"
 """
-browser.find_element(By.XPATH,"//span[@class='user-id']").click()
-browser.find_element(By.XPATH,"//a[normalize-space()='Logout']").click()
+#browser.find_element(By.XPATH,"//span[@class='user-id']").click()
+# browser.find_element(By.XPATH,"//a[normalize-space()='Logout']").click()
 
 """
 1. Find the list of symbols which needs to include in the id

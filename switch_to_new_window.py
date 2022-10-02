@@ -29,6 +29,7 @@ Here we are going to switch between windows.
 
 
 """
+browser.get("https://www.nseindia.com/market-data/live-equity-market")
 browser.get("https://the-internet.herokuapp.com/windows")
 print(browser.title)
 browser.find_element(By.XPATH,"//a[normalize-space()='Click Here']").click()

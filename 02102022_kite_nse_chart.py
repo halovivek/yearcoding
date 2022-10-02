@@ -23,20 +23,43 @@ browser.implicitly_wait(5)
 
 
 """
-Here we are going to switch between windows.
+Opening the kite browser to first page.
+"""
+browser.get("https://kite.zerodha.com/")
+print(browser.title)
+browser.find_element(By.XPATH,"//input[@id='userid']").send_keys("DV1815")
+browser.find_element(By.XPATH,"//input[@id='password']").send_keys("Guru@1234")
+browser.find_element(By.CSS_SELECTOR,"button[type='submit']").click()
+browser.find_element(By.XPATH,"//input[@placeholder='••••••']").send_keys(235059)
+browser.find_element(By.XPATH,"//button[normalize-space()='Continue']").click()
+print(browser.title)
+browser.find_element(By.XPATH,"//span[@class='nice-name'][normalize-space()='NIFTY 50']").click()
+browser.find_element(By.XPATH,"//span[@class='icon icon-trending-up']").click()
+print(browser.title)
+
+
+#//span[@class='nice-name'][normalize-space()='NIFTY 50']
+#//span[@class='icon icon-trending-up']
 
 
 """
-browser.get("https://the-internet.herokuapp.com/windows")
-print(browser.title)
 browser.find_element(By.XPATH,"//a[normalize-space()='Click Here']").click()
 windows = browser.window_handles
 browser.switch_to.window(windows[1])
 print(browser.find_element(By.XPATH, "//h3[normalize-space()='New Window']").text)
-#browser.close()
+browser.close()
 #this will close the child window and it will move to the new window
 browser.switch_to.window(windows[0])
 print(browser.find_element(By.CSS_SELECTOR,"div[class='example'] h3").text)
 test = browser.find_element(By.CSS_SELECTOR,"div[class='example'] h3").text
 assert test == "Opening a new window"
+"""
+browser.find_element(By.XPATH,"//span[@class='user-id']").click()
+browser.find_element(By.XPATH,"//a[normalize-space()='Logout']").click()
 
+"""
+1. Find the list of symbols which needs to include in the id
+2. need to the screen shot 
+3. store all the files in a folder with date format
+
+"""
