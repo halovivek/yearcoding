@@ -24,3 +24,4 @@ browser.get("https://the-internet.herokuapp.com/")
 
 browser.execute_script("scrollBy(0,document.body.scrollHeight);")
 browser.get_screenshot_as_file("test.png")
+#test
