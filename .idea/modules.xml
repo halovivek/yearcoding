@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Nseautomation/.idea/Nseautomation.iml" filepath="$PROJECT_DIR$/../Nseautomation/.idea/Nseautomation.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/yearcoding.iml" filepath="$PROJECT_DIR$/.idea/yearcoding.iml" />
     </modules>
   </component>
