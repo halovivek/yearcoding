@@ -51,6 +51,7 @@ DHP = []
 DLP = []
 CP = []
 print(df_n50)
+df_n50.to_csv('test.csv')
 # while True:
 #     try:
 #         for index, row in df_n50.iterrows():
