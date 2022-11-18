@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 #path of the file you want to enemurate
-path = "//home//halovivek//Downloads//"
+path = "//media//halovivek//36DA2D16090501F8//torrents//"
 directory =[]
 filename=[]
 
